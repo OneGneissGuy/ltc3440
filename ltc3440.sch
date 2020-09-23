@@ -352,7 +352,7 @@ Connection ~ 6400 3000
 Text Notes 4450 4400 0    50   ~ 0
 Fixed Freq. Mode
 Text Notes 4400 4950 0    50   ~ 0
-RT=60.4k, fsw=1MHz\nRT=40.4k, fsw=1.5MHz\n
+RT=60.4k, fsw=1MHz\nRT=45.3k, fsw=1.5MHz\n
 $Comp
 L Device:R_Small RT1
 U 1 1 5F6B5037

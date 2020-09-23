@@ -336,7 +336,7 @@ Connection ~ 4900 4300
 Wire Wire Line
 	4900 4300 5500 4300
 Text Notes 4400 4750 0    50   ~ 0
-Switching frequency,fsw\nRT = (8*10e10)/fsw\nRT 1%
+Switching frequency,fsw\nRT = (8*10e10)/fsw\n
 Wire Wire Line
 	4450 2950 4450 3600
 Wire Wire Line
@@ -364,4 +364,6 @@ F 3 "~" H 4600 4100 50  0001 C CNN
 	1    4600 4100
 	1    0    0    -1  
 $EndComp
+Text Notes 4650 4250 0    50   ~ 0
+1%
 $EndSCHEMATC
