@@ -14,32 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ltc3440:LTC3440EDD U1
-U 1 1 5F6AED89
-P 5600 3600
-F 0 "U1" H 5150 4050 50  0000 C CNN
-F 1 "LTC3440EDD" H 6000 3050 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm" H 5750 3050 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3440fd.pdf" H 5600 3550 50  0001 C CNN
-F 4 "LTC3440EDD#TRPBFCT-ND" H 5600 3600 50  0001 C CNN "Digikey_PN"
-F 5 "LTC3440EDD#TRPBF" H 5600 3600 50  0001 C CNN "MPN"
-	1    5600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L_Small L1
-U 1 1 5F6B38BC
-P 5600 2950
-F 0 "L1" V 5785 2950 50  0000 C CNN
-F 1 "L_Small" V 5694 2950 50  0000 C CNN
-F 2 "" H 5600 2950 50  0001 C CNN
-F 3 "~" H 5600 2950 50  0001 C CNN
-F 4 "CDR43-4R7M" V 5600 2950 50  0001 C CNN "MPN"
-F 5 "SUMIDA " V 5600 2950 50  0001 C CNN "Manufacturer"
-	1    5600 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R1
 U 1 1 5F6B5492
 P 6800 3350
@@ -110,17 +84,6 @@ F 5 "TAIYO YUDEN" H 4450 3700 50  0001 C CNN "Manufacturer"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R5
-U 1 1 5F6BE50F
-P 7050 3400
-F 0 "R5" H 7109 3446 50  0000 L CNN
-F 1 "10k" H 7109 3355 50  0000 L CNN
-F 2 "" H 7050 3400 50  0001 C CNN
-F 3 "~" H 7050 3400 50  0001 C CNN
-	1    7050 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR03
 U 1 1 5F6C1CB3
 P 7050 2800
@@ -188,52 +151,27 @@ Wire Wire Line
 	4450 2800 4450 2950
 Connection ~ 4450 2950
 Wire Wire Line
-	6100 3700 6150 3700
-Wire Wire Line
 	6400 3700 6500 3700
 Wire Wire Line
 	6700 3700 6800 3700
 Wire Wire Line
-	6800 3700 6800 3950
-Wire Wire Line
 	6800 3700 6800 3600
 Connection ~ 6800 3700
-Wire Wire Line
-	6150 3700 6150 3950
-Wire Wire Line
-	6150 3950 6350 3950
-Connection ~ 6150 3700
-Wire Wire Line
-	6150 3700 6200 3700
-Wire Wire Line
-	6550 3950 6800 3950
-Connection ~ 6800 3950
-Wire Wire Line
-	6800 3950 6800 4000
 Wire Wire Line
 	6800 4200 6800 4300
 Wire Wire Line
 	6800 4300 5700 4300
 Connection ~ 5700 4300
-Wire Wire Line
-	7050 3500 7050 3600
-Wire Wire Line
-	7050 3600 6800 3600
 Connection ~ 6800 3600
 Wire Wire Line
 	6800 3600 6800 3500
 Wire Wire Line
-	7050 3600 7350 3600
-Wire Wire Line
 	7350 3600 7350 3700
-Connection ~ 7050 3600
 Wire Wire Line
 	7350 3900 7350 4300
 Wire Wire Line
 	7350 4300 6800 4300
 Connection ~ 6800 4300
-Wire Wire Line
-	7050 3250 7050 3300
 Wire Wire Line
 	7050 2800 7050 3000
 Wire Wire Line
@@ -258,39 +196,15 @@ Wire Wire Line
 	6400 3000 7050 3000
 Connection ~ 7050 3000
 Wire Wire Line
-	7050 3000 7050 3050
-Wire Wire Line
 	7050 3000 7350 3000
 Wire Wire Line
 	7350 3000 7350 3600
 Connection ~ 7350 3600
-$Comp
-L Device:C_Small C5
-U 1 1 5F6BD824
-P 6450 3950
-F 0 "C5" V 6350 4050 50  0000 C CNN
-F 1 "10pF" V 6350 3850 50  0000 C CNN
-F 2 "" H 6450 3950 50  0001 C CNN
-F 3 "~" H 6450 3950 50  0001 C CNN
-	1    6450 3950
-	0    -1   -1   0   
-$EndComp
 Connection ~ 6800 3500
 Wire Wire Line
 	6800 3500 6800 3450
 Wire Wire Line
 	6100 3500 6800 3500
-$Comp
-L Device:C_Small C3
-U 1 1 5F6BDEFF
-P 7050 3150
-F 0 "C3" H 7125 3200 50  0000 L CNN
-F 1 "33pF" H 7100 3075 50  0000 L CNN
-F 2 "" H 7050 3150 50  0001 C CNN
-F 3 "~" H 7050 3150 50  0001 C CNN
-	1    7050 3150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Schottky_Small_ALT D1
 U 1 1 5F70336F
@@ -335,8 +249,6 @@ Wire Wire Line
 Connection ~ 4900 4300
 Wire Wire Line
 	4900 4300 5500 4300
-Text Notes 4400 4750 0    50   ~ 0
-Switching frequency,fsw\nRT = (8*10e10)/fsw\n
 Wire Wire Line
 	4450 2950 4450 3600
 Wire Wire Line
@@ -351,8 +263,6 @@ VOUT voltage set by R1,R2 on FB\nVOUT = 1.22* (1+R1/R2)
 Connection ~ 6400 3000
 Text Notes 4450 4400 0    50   ~ 0
 Fixed Freq. Mode
-Text Notes 4400 4950 0    50   ~ 0
-RT=60.4k, fsw=1MHz\nRT=45.3k, fsw=1.5MHz\n
 $Comp
 L Device:R_Small RT1
 U 1 1 5F6B5037
@@ -364,6 +274,96 @@ F 3 "~" H 4600 4100 50  0001 C CNN
 	1    4600 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L ltc3440:LTC3440EDD U1
+U 1 1 5F6AED89
+P 5600 3600
+F 0 "U1" H 5150 4050 50  0000 C CNN
+F 1 "LTC3440EDD" H 6000 3050 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm" H 5750 3050 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3440fd.pdf" H 5600 3550 50  0001 C CNN
+F 4 "LTC3440EDD#TRPBFCT-ND" H 5600 3600 50  0001 C CNN "Digikey_PN"
+F 5 "LTC3440EDD#TRPBF" H 5600 3600 50  0001 C CNN "MPN"
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 5F6B38BC
+P 5600 2950
+F 0 "L1" V 5785 2950 50  0000 C CNN
+F 1 "4.7uH" V 5694 2950 50  0000 C CNN
+F 2 "" H 5600 2950 50  0001 C CNN
+F 3 "~" H 5600 2950 50  0001 C CNN
+F 4 "CDR43-4R7M" V 5600 2950 50  0001 C CNN "MPN"
+F 5 "SUMIDA " V 5600 2950 50  0001 C CNN "Manufacturer"
+	1    5600 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 3700 6200 3700
+Wire Wire Line
+	6100 3700 6150 3700
+Connection ~ 6150 3700
+Wire Wire Line
+	6150 3700 6150 3950
+Wire Wire Line
+	6150 3950 6350 3950
+Wire Wire Line
+	6800 3950 6800 4000
+Wire Wire Line
+	6800 3700 6800 3950
+Connection ~ 6800 3950
+Wire Wire Line
+	6550 3950 6800 3950
+$Comp
+L Device:C_Small C5
+U 1 1 5F6BD824
+P 6450 3950
+F 0 "C5" V 6350 4050 50  0000 C CNN
+F 1 "10pF" V 6350 3850 50  0000 C CNN
+F 2 "" H 6450 3950 50  0001 C CNN
+F 3 "~" H 6450 3950 50  0001 C CNN
+	1    6450 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3000 7050 3050
+Wire Wire Line
+	7050 3600 7350 3600
+Wire Wire Line
+	7050 3600 6800 3600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3500 7050 3600
+Wire Wire Line
+	7050 3250 7050 3300
+$Comp
+L Device:C_Small C3
+U 1 1 5F6BDEFF
+P 7050 3150
+F 0 "C3" H 7125 3200 50  0000 L CNN
+F 1 "33pF" H 7100 3075 50  0000 L CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5F6BE50F
+P 7050 3400
+F 0 "R5" H 7109 3446 50  0000 L CNN
+F 1 "10k" H 7109 3355 50  0000 L CNN
+F 2 "" H 7050 3400 50  0001 C CNN
+F 3 "~" H 7050 3400 50  0001 C CNN
+	1    7050 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 4750 0    50   ~ 0
+Switching frequency,fsw\nRT = (8*10e10)/fsw\n
 Text Notes 4650 4250 0    50   ~ 0
 1%
+Text Notes 4400 4950 0    50   ~ 0
+RT=60.4k, fsw=1MHz\nRT=45.3k, fsw=1.5MHz\n
 $EndSCHEMATC
