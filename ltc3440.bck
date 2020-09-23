@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3440EDD
+D Micropower Synchronous Buck-Boost DC/DC Converter, DFN-10
+K Micropower Synchronous Buck-Boost DC/DC Converter
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3440fd.pdf
+$ENDCMP
+#
+#End Doc Library

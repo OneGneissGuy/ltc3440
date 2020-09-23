@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ltc3442)(type Legacy)(uri ${KIPRJMOD}/ltc3442.lib)(options "")(descr ""))
+  (lib (name ltc3440)(type Legacy)(uri ${KIPRJMOD}/ltc3440.lib)(options "")(descr ""))
+)

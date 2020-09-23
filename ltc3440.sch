@@ -1,0 +1,369 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ltc3440:LTC3440EDD U1
+U 1 1 5F6AED89
+P 5600 3600
+F 0 "U1" H 5150 4050 50  0000 C CNN
+F 1 "LTC3440EDD" H 6000 3050 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm" H 5750 3050 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3440fd.pdf" H 5600 3550 50  0001 C CNN
+F 4 "LTC3440EDD#TRPBFCT-ND" H 5600 3600 50  0001 C CNN "Digikey_PN"
+F 5 "LTC3440EDD#TRPBF" H 5600 3600 50  0001 C CNN "MPN"
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 5F6B38BC
+P 5600 2950
+F 0 "L1" V 5785 2950 50  0000 C CNN
+F 1 "L_Small" V 5694 2950 50  0000 C CNN
+F 2 "" H 5600 2950 50  0001 C CNN
+F 3 "~" H 5600 2950 50  0001 C CNN
+F 4 "CDR43-4R7M" V 5600 2950 50  0001 C CNN "MPN"
+F 5 "SUMIDA " V 5600 2950 50  0001 C CNN "Manufacturer"
+	1    5600 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F6B5492
+P 6800 3350
+F 0 "R1" H 6650 3400 50  0000 L CNN
+F 1 "340k" H 6550 3300 50  0000 L CNN
+F 2 "" H 6800 3350 50  0001 C CNN
+F 3 "~" H 6800 3350 50  0001 C CNN
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5F6B5CEC
+P 6800 4100
+F 0 "R2" H 6859 4146 50  0000 L CNN
+F 1 "200k" H 6859 4055 50  0000 L CNN
+F 2 "" H 6800 4100 50  0001 C CNN
+F 3 "~" H 6800 4100 50  0001 C CNN
+	1    6800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5F6B5F11
+P 6300 3700
+F 0 "R3" V 6200 3700 50  0000 C CNN
+F 1 "15k" V 6400 3700 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "~" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5F6B6FD3
+P 7350 3800
+F 0 "C2" H 7442 3846 50  0000 L CNN
+F 1 "22uF" H 7442 3755 50  0000 L CNN
+F 2 "" H 7350 3800 50  0001 C CNN
+F 3 "~" H 7350 3800 50  0001 C CNN
+F 4 "JMK325BJ226MM" H 7350 3800 50  0001 C CNN "MPN"
+F 5 "TAIYO YUDEN" H 7350 3800 50  0001 C CNN "Manufacturer"
+	1    7350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5F6B726C
+P 6600 3700
+F 0 "C4" V 6500 3700 50  0000 C CNN
+F 1 "150pF" V 6700 3700 50  0000 C CNN
+F 2 "" H 6600 3700 50  0001 C CNN
+F 3 "~" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5F6B880E
+P 4450 3700
+F 0 "C1" H 4358 3654 50  0000 R CNN
+F 1 "10uF" H 4358 3745 50  0000 R CNN
+F 2 "" H 4450 3700 50  0001 C CNN
+F 3 "~" H 4450 3700 50  0001 C CNN
+F 4 "JMK212BJ106MG" H 4450 3700 50  0001 C CNN "MPN"
+F 5 "TAIYO YUDEN" H 4450 3700 50  0001 C CNN "Manufacturer"
+	1    4450 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5F6BE50F
+P 7050 3400
+F 0 "R5" H 7109 3446 50  0000 L CNN
+F 1 "10k" H 7109 3355 50  0000 L CNN
+F 2 "" H 7050 3400 50  0001 C CNN
+F 3 "~" H 7050 3400 50  0001 C CNN
+	1    7050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5F6C1CB3
+P 7050 2800
+F 0 "#PWR03" H 7050 2650 50  0001 C CNN
+F 1 "+3.3V" H 7065 2973 50  0000 C CNN
+F 2 "" H 7050 2800 50  0001 C CNN
+F 3 "" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F6C33DB
+P 5600 4350
+F 0 "#PWR04" H 5600 4100 50  0001 C CNN
+F 1 "GND" H 5605 4177 50  0000 C CNN
+F 2 "" H 5600 4350 50  0001 C CNN
+F 3 "" H 5600 4350 50  0001 C CNN
+	1    5600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2950 5700 3000
+Wire Wire Line
+	5500 4200 5500 4300
+Wire Wire Line
+	5500 4300 5600 4300
+Wire Wire Line
+	5700 4300 5700 4200
+Wire Wire Line
+	5600 4300 5600 4350
+Connection ~ 5600 4300
+Wire Wire Line
+	5600 4300 5700 4300
+Wire Wire Line
+	4600 4200 4600 4300
+Wire Wire Line
+	4600 4300 4900 4300
+Connection ~ 5500 4300
+Wire Wire Line
+	4600 4000 4600 3900
+Wire Wire Line
+	4600 3900 5000 3900
+Wire Wire Line
+	4450 3800 4450 4300
+Wire Wire Line
+	4450 4300 4600 4300
+Connection ~ 4600 4300
+Wire Wire Line
+	5300 3100 5300 2950
+Wire Wire Line
+	5300 2950 4900 2950
+$Comp
+L power:+BATT #PWR01
+U 1 1 5F6C24BC
+P 4450 2800
+F 0 "#PWR01" H 4450 2650 50  0001 C CNN
+F 1 "+BATT" H 4465 2973 50  0000 C CNN
+F 2 "" H 4450 2800 50  0001 C CNN
+F 3 "" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2800 4450 2950
+Connection ~ 4450 2950
+Wire Wire Line
+	6100 3700 6150 3700
+Wire Wire Line
+	6400 3700 6500 3700
+Wire Wire Line
+	6700 3700 6800 3700
+Wire Wire Line
+	6800 3700 6800 3950
+Wire Wire Line
+	6800 3700 6800 3600
+Connection ~ 6800 3700
+Wire Wire Line
+	6150 3700 6150 3950
+Wire Wire Line
+	6150 3950 6350 3950
+Connection ~ 6150 3700
+Wire Wire Line
+	6150 3700 6200 3700
+Wire Wire Line
+	6550 3950 6800 3950
+Connection ~ 6800 3950
+Wire Wire Line
+	6800 3950 6800 4000
+Wire Wire Line
+	6800 4200 6800 4300
+Wire Wire Line
+	6800 4300 5700 4300
+Connection ~ 5700 4300
+Wire Wire Line
+	7050 3500 7050 3600
+Wire Wire Line
+	7050 3600 6800 3600
+Connection ~ 6800 3600
+Wire Wire Line
+	6800 3600 6800 3500
+Wire Wire Line
+	7050 3600 7350 3600
+Wire Wire Line
+	7350 3600 7350 3700
+Connection ~ 7050 3600
+Wire Wire Line
+	7350 3900 7350 4300
+Wire Wire Line
+	7350 4300 6800 4300
+Connection ~ 6800 4300
+Wire Wire Line
+	7050 3250 7050 3300
+Wire Wire Line
+	7050 2800 7050 3000
+Wire Wire Line
+	6100 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 3200
+Wire Wire Line
+	6400 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3250
+Connection ~ 6400 3200
+Wire Wire Line
+	6400 3200 6400 3000
+Wire Wire Line
+	6400 3000 5700 3000
+Connection ~ 5700 3000
+Wire Wire Line
+	5700 3000 5700 3100
+Wire Wire Line
+	5500 2950 5500 3000
+Wire Wire Line
+	6400 3000 7050 3000
+Connection ~ 7050 3000
+Wire Wire Line
+	7050 3000 7050 3050
+Wire Wire Line
+	7050 3000 7350 3000
+Wire Wire Line
+	7350 3000 7350 3600
+Connection ~ 7350 3600
+$Comp
+L Device:C_Small C5
+U 1 1 5F6BD824
+P 6450 3950
+F 0 "C5" V 6350 4050 50  0000 C CNN
+F 1 "10pF" V 6350 3850 50  0000 C CNN
+F 2 "" H 6450 3950 50  0001 C CNN
+F 3 "~" H 6450 3950 50  0001 C CNN
+	1    6450 3950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6800 3500
+Wire Wire Line
+	6800 3500 6800 3450
+Wire Wire Line
+	6100 3500 6800 3500
+$Comp
+L Device:C_Small C3
+U 1 1 5F6BDEFF
+P 7050 3150
+F 0 "C3" H 7125 3200 50  0000 L CNN
+F 1 "33pF" H 7100 3075 50  0000 L CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D1
+U 1 1 5F70336F
+P 5150 2750
+F 0 "D1" H 5150 2543 50  0000 C CNN
+F 1 "D_Schottky_Small_ALT" H 5150 2634 50  0000 C CNN
+F 2 "" V 5150 2750 50  0001 C CNN
+F 3 "~" V 5150 2750 50  0001 C CNN
+F 4 "CMDSH2-3" H 5150 2750 50  0001 C CNN "MPN"
+F 5 "CENTRAL SEMICONDUCTOR " H 5150 2750 50  0001 C CNN "Manufacturer"
+	1    5150 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F703CEF
+P 5000 2800
+F 0 "#PWR02" H 5000 2550 50  0001 C CNN
+F 1 "GND" H 4850 2750 50  0000 C CNN
+F 2 "" H 5000 2800 50  0001 C CNN
+F 3 "" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2750 5000 2750
+Wire Wire Line
+	5000 2750 5000 2800
+Wire Wire Line
+	5250 2750 5400 2750
+Wire Wire Line
+	5400 2750 5400 3000
+Wire Wire Line
+	5400 3000 5500 3000
+Connection ~ 5500 3000
+Wire Wire Line
+	5500 3000 5500 3100
+Wire Wire Line
+	5000 3700 4900 3700
+Wire Wire Line
+	4900 3700 4900 4300
+Connection ~ 4900 4300
+Wire Wire Line
+	4900 4300 5500 4300
+Text Notes 4400 4750 0    50   ~ 0
+Switching frequency,fsw\nRT = (8*10e10)/fsw\n
+Wire Wire Line
+	4450 2950 4450 3600
+Wire Wire Line
+	5000 3500 4900 3500
+Wire Wire Line
+	4900 3500 4900 2950
+Connection ~ 4900 2950
+Wire Wire Line
+	4900 2950 4450 2950
+Text Notes 6200 4750 0    50   ~ 0
+VOUT voltage set by R1,R2 on FB\nVOUT = 1.22* (1+R1/R2)
+Connection ~ 6400 3000
+Text Notes 4450 4400 0    50   ~ 0
+Fixed Freq. Mode
+Text Notes 4400 4950 0    50   ~ 0
+RT=60.4k, fsw=1MHz\nRT=40.4k, fsw=1.5MHz\n
+$Comp
+L Device:R_Small RT1
+U 1 1 5F6B5037
+P 4600 4100
+F 0 "RT1" H 4659 4146 50  0000 L CNN
+F 1 "45.3k" H 4659 4055 50  0000 L CNN
+F 2 "" H 4600 4100 50  0001 C CNN
+F 3 "~" H 4600 4100 50  0001 C CNN
+	1    4600 4100
+	1    0    0    -1  
+$EndComp
+Text Notes 4650 4250 0    50   ~ 0
+1%
+$EndSCHEMATC
