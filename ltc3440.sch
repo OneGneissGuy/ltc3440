@@ -120,8 +120,6 @@ Wire Wire Line
 	5600 4300 5700 4300
 Wire Wire Line
 	4600 4200 4600 4300
-Wire Wire Line
-	4600 4300 4900 4300
 Connection ~ 5500 4300
 Wire Wire Line
 	4600 4000 4600 3900
@@ -174,33 +172,13 @@ Wire Wire Line
 Wire Wire Line
 	5000 3700 4900 3700
 Wire Wire Line
-	4900 3700 4900 4300
-Connection ~ 4900 4300
-Wire Wire Line
-	4900 4300 5500 4300
-Wire Wire Line
 	4450 2950 4450 3500
-Wire Wire Line
-	5000 3500 4900 3500
-Wire Wire Line
-	4900 3500 4900 2950
 Connection ~ 4900 2950
 Wire Wire Line
 	4900 2950 4450 2950
 Text Notes 6200 4750 0    50   ~ 0
 VOUT voltage set by R1,R2 on FB\nVOUT = 1.22* (1+R1/R2)
 Connection ~ 6400 3000
-$Comp
-L Device:R_Small RT1
-U 1 1 5F6B5037
-P 4600 4100
-F 0 "RT1" H 4659 4146 50  0000 L CNN
-F 1 "60.4k" H 4659 4055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 4100 50  0001 C CNN
-F 3 "~" H 4600 4100 50  0001 C CNN
-	1    4600 4100
-	1    0    0    -1  
-$EndComp
 $Comp
 L ltc3440:LTC3440EDD U1
 U 1 1 5F6AED89
@@ -251,8 +229,6 @@ Wire Wire Line
 Connection ~ 6800 3000
 Wire Wire Line
 	6800 3000 7150 3000
-Text Notes 4450 4400 0    50   ~ 0
-Fixed Freq. Mode
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F742A39
@@ -358,4 +334,26 @@ Wire Wire Line
 Connection ~ 8300 3200
 Wire Wire Line
 	8300 3200 8300 3350
+Text Notes 4630 3800 0    50   ~ 0
+Burst Mode
+$Comp
+L Device:R_Small RT1
+U 1 1 5F6B5037
+P 4600 4100
+F 0 "RT1" H 4659 4146 50  0000 L CNN
+F 1 "60.4k" H 4659 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 4100 50  0001 C CNN
+F 3 "~" H 4600 4100 50  0001 C CNN
+	1    4600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3500 4900 3500
+Wire Wire Line
+	4600 4300 5500 4300
+Wire Wire Line
+	4900 2950 4900 3500
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 4900 3700
 $EndSCHEMATC
