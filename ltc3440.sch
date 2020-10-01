@@ -106,8 +106,6 @@ F 3 "" H 5600 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 2950 5700 3000
-Wire Wire Line
 	5500 4200 5500 4300
 Wire Wire Line
 	5500 4300 5600 4300
@@ -157,11 +155,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 3300 6400 3300
 Wire Wire Line
-	6400 3000 5700 3000
-Connection ~ 5700 3000
-Wire Wire Line
-	5700 3000 5700 3100
-Wire Wire Line
 	6400 3000 6800 3000
 Connection ~ 7150 3000
 Connection ~ 6800 3500
@@ -178,7 +171,6 @@ Wire Wire Line
 	4900 2950 4450 2950
 Text Notes 6200 4750 0    50   ~ 0
 VOUT voltage set by R1,R2 on FB\nVOUT = 1.22* (1+R1/R2)
-Connection ~ 6400 3000
 $Comp
 L ltc3440:LTC3440EDD U1
 U 1 1 5F6AED89
@@ -356,4 +348,6 @@ Wire Wire Line
 Connection ~ 4900 3500
 Wire Wire Line
 	4900 3500 4900 3700
+Wire Wire Line
+	5700 2950 5700 3100
 $EndSCHEMATC
