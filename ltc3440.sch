@@ -350,4 +350,26 @@ Wire Wire Line
 	4900 3500 4900 3700
 Wire Wire Line
 	5700 2950 5700 3100
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F7643A2
+P 8600 4100
+F 0 "H1" H 8700 4149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8700 4058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8600 4100 50  0001 C CNN
+F 3 "~" H 8600 4100 50  0001 C CNN
+	1    8600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F766531
+P 8600 4200
+F 0 "#PWR02" H 8600 3950 50  0001 C CNN
+F 1 "GND" H 8605 4027 50  0000 C CNN
+F 2 "" H 8600 4200 50  0001 C CNN
+F 3 "" H 8600 4200 50  0001 C CNN
+	1    8600 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
